@@ -6,11 +6,11 @@
 <body>
     <h1>Welcome to My Website</h1>
     <button id="windowButton">Window Button!</button>
-
+    <h2 id="textfield">not specified</h2>
     <script>
         document.getElementById('windowButton').addEventListener('click', function() {
-    window.confirm("Do you really want to leave?");
-});
+        document.getElementById("textfield").innerHTML = window.confirm("Do you really want to leave?");
+        });
     </script>
 </body>
 </html>
