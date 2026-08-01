@@ -17,7 +17,7 @@ d3.csv("titanic.csv").then(function(data) {
     const pageId = document.body.id;
     
     if (pageId === "page-class") {
-        d3.select("#narrative-text").text("Socio-economic status played a critical role. First-class passengers had a much higher likelihood of survival compared to those in Third class.");
+        d3.select("#narrative-text").text("This Visual Narrative shares the Survival rate of individuals who rode Titanic based on Socio-economic status and gender.  First we will view Socio-economic status. First-class passengers had a much higher likelihood of survival compared to those in Third class.");
         drawBasicChart(data, "class");
     } else if (pageId === "page-sex") {
         d3.select("#narrative-text").text("The 'Women and children first' code of conduct heavily influenced survival. The survival rate for women was vastly higher than for men.");
