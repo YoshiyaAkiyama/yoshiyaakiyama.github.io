@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Titanic Survival - Class</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body id="page-class">
+    <div id="app">
+        <header>
+            <h1>The Impact of Passenger Class</h1>
+            <p id="narrative-text">Loading...</p>
+        </header>
+
+        <main>
+            <div id="controls" class="hidden">
+                <!-- Controls hidden on this page -->
+            </div>
+
+            <div id="chart-container">
+                <!-- SVG chart will be injected here by D3 -->
+            </div>
+            
+            <div id="navigation">
+                <a href="#" class="nav-btn disabled">Previous</a>
+                <div id="step-indicators">
+                    <span class="step active"></span>
+                    <span class="step"></span>
+                    <span class="step"></span>
+                </div>
+                <a href="page2.html" class="nav-btn">Next</a>
+            </div>
+        </main>
+    </div>
+
+
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-annotation/2.5.1/d3-annotation.min.js"></script>
+    <script src="https://unpkg.com/topojson-client@3"></script>
+    <script src="app.js"></script>
+</body>
+</html>
