@@ -1,0 +1,162 @@
+body {
+    font-family: sans-serif;
+    margin: 20px;
+    color: #333;
+    background-color: #fff;
+}
+
+#app {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+#narrative-text {
+    font-size: 1rem;
+    line-height: 1.4;
+}
+
+#chart-container {
+    width: 100%;
+    height: 500px;
+    margin-bottom: 20px;
+}
+
+#controls {
+    margin-bottom: 20px;
+    min-height: 35px;
+}
+
+.control-group {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+select {
+    padding: 5px;
+}
+
+#navigation {
+    margin-top: 20px;
+}
+
+.nav-btn {
+    padding: 8px 16px;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    color: #333;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.nav-btn:hover:not(.disabled) {
+    background-color: #ddd;
+}
+
+.nav-btn.disabled {
+    color: #999;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+#step-indicators {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.step {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #ccc;
+    margin: 0 4px;
+}
+
+.step.active {
+    background-color: #333;
+}
+
+.bar-survived {
+    fill: #2ca02c; /* Basic green */
+}
+
+.bar-perished {
+    fill: #d62728; /* Basic red */
+}
+
+.bar-survived:hover, .bar-perished:hover {
+    opacity: 0.8;
+}
+
+.axis-label {
+    fill: #333;
+    font-size: 12px;
+}
+
+.tick text {
+    fill: #333;
+    font-size: 12px;
+}
+
+.tick line, .domain {
+    stroke: #ccc;
+}
+
+
+.tooltip {
+    position: absolute;
+    background-color: #fff;
+    color: #333;
+    padding: 10px;
+    border: 1px solid #ccc;
+    pointer-events: none;
+    opacity: 0;
+    font-size: 12px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border-radius: 4px;
+    z-index: 10;
+}
+.tooltip h4 {
+    margin: 0 0 5px 0;
+    font-size: 14px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
+}
+.tooltip table {
+    border-collapse: collapse;
+}
+.tooltip td {
+    padding: 2px 5px;
+}
+.tooltip .age-group {
+    text-align: left;
+}
+.tooltip .age-count {
+    text-align: right;
+    font-weight: bold;
+}
+
+/* Annotations */
+.annotation path {
+    stroke: #333;
+    stroke-width: 1.5px;
+}
+
+.annotation text {
+    fill: #333;
+    font-size: 12px;
+}
+
+.annotation-note-title {
+    font-weight: bold;
+}
